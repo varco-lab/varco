@@ -13,7 +13,7 @@ export async function loadConfig(appRoot: string): Promise<VarcoConfig> {
     }
 
     return {
-        port: userConfig.port,
+        devServer: userConfig.devServer,
         reactStrictMode: userConfig.reactStrictMode === false ? false : true,
         transpilePackages: userConfig.transpilePackages || [],
         vitePlugins: userConfig.vitePlugins ?? []
