@@ -2,7 +2,9 @@ import React from 'react'
 import type { Plugin } from 'vite'
 
 export type VarcoConfig = {
-    port?: number
+    devServer?: {
+        port?: number
+    }
     reactStrictMode?: boolean
     transpilePackages?: string[]
     vitePlugins?: Plugin[] | Plugin[][]

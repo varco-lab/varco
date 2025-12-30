@@ -36,6 +36,6 @@ export async function dev() {
         },
     })
 
-    await server.listen(userConfig.port ?? 3000)
+    await server.listen(userConfig.devServer?.port ?? 3000)
     server.printUrls()
 }
