@@ -1,7 +1,7 @@
 {
     "name": "varco",
     "version": "0.1.0",
-    "description": "",
+    "description": "Lightweight client-first React Framework (without SSR) built on top of Vite",
     "type": "module",
     "bin": {
         "varco": "dist/bin/varco.js"
@@ -9,15 +9,28 @@
     "exports": {
         ".": "./dist/index.js"
     },
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "tsc",
         "typecheck": "tsc --noEmit",
         "test": "vitest"
     },
-    "keywords": [],
+    "keywords": [
+        "react",
+        "framework",
+        "vite",
+        "client-side",
+        "spa"
+    ],
     "author": "",
-    "license": "ISC",
-    "dependencies": {
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/varco-lab/varco"
+    },
+    "peerDependencies": {
         "react": "^19.2.3",
         "react-dom": "^19.2.3"
     },
